@@ -1,0 +1,128 @@
+/*reset the boxsizing to border-box*/
+/*reset the padding and margin to zero*/
+* {
+ 	box-sizing: border-box; 
+	margin: 0;
+ 	padding: 0;
+ }
+/*Section I - this portion of the css provides styling and structure for Menu section*/
+
+/*changed the html background color and set text color to white*/
+body, html{ 
+  background-color: #E37222;
+  color: #ffff;
+  position:fixed;
+}
+/*The header section is given padding on all sides*/
+header{
+	padding: 15px 15px 15px 50px;
+}
+/*The footer section is given padding on all sides*/
+footer{
+	padding: 230px 15px 15px 50px
+}
+/*h3 element is given padding(-left, -right) and margin(top, bottom)*/
+h3 {
+	
+	padding: 0px 10px 0px 10px;
+	margin-top: 30px;
+	margin-bottom: 25px;
+	
+}
+/*h1 element is given padding on all sides*/
+/*The h1 content is centered and given an underline text decoration*/
+h1{
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	text-decoration: underline wavy white;
+}
+/*h2 element is given padding on alll sides*/
+/*h2 content is centered*/
+h2{
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+}
+/*P element is aligned on the left */
+p {
+	
+	text-align: left;
+}
+/*Combining p element and id='copy' to target that specific selector combination*/
+p#copy{
+	
+	text-align: center;
+}
+/*targeting contianer id; setting the width and height for box*/
+/*next added backgroud color to section off the html page*/
+/*Lastly adding padding on all sides*/
+#container {
+	width: 100%;
+	height: 400px;
+	background-color:  #EEAA7B;
+	padding: 50px 10px 0px 10px;
+/* ids' textbox1 - textbox3 use the same styling and structuring for the most part*/
+/* background color changes for each textbox*/
+}
+
+#textbox1 {
+	height: 300px;
+	width: 33%;
+	background-color: #f7B733;
+	float: left;
+	padding: 30px 15px 10px 15px;
+	overflow: auto;
+	border: .5px solid white;
+  	border-radius: 12px;
+}
+
+#textbox2 {
+	height: 300px;
+	width: 33%;
+	background-color: #FC4A1A;
+	float: left;
+	padding: 30px 15px 10px 15px;
+	overflow: auto;
+	border: .5px solid white;
+  	border-radius: 12px;
+
+}
+
+#textbox3 {
+	height: 300px;
+	width: 34%;
+	background-color: #DF744A;
+	float: left;
+	padding: 30px 15px 10px 15px;
+	overflow: auto;
+	border: .5px solid white;
+  	border-radius: 12px;
+
+}
+/*given that each title for the menu item is standalone*/
+/*Each menu item subtitle is given individual styling*/
+#title1{
+	float: right;
+	background-color: #FC4A1A;
+	border: 1px solid white;
+	border-radius: 8px; 
+	display: inline;
+	
+}
+#title2{
+	float: right;
+	background-color: #DF744A;
+	border: 1px solid white;
+	border-radius: 8px;
+	display: inline;
+}
+#title3{
+	float: right;
+	background-color: #f7B733;
+	border: 1px solid white;
+	border-radius: 8px;
+	display: inline;
+}
+/*In order to create a three column menu; clear attribute is used to push other elements to the next line*/
+p#clear{
+	clear:both;
+}
